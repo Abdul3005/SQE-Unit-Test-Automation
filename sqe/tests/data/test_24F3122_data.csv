@@ -1,0 +1,9 @@
+test_id,input,expected,description
+JH-CSV-DD-01,=SUM(A1:A10),'=SUM(A1:A10),Formula prefix equals
+JH-CSV-DD-02,+cmd|' /C calc'!A0,'+cmd|' /C calc'!A0,Formula prefix plus
+JH-CSV-DD-03,-2+3+cmd|' /C calc'!A0,'-2+3+cmd|' /C calc'!A0,Formula prefix minus
+JH-CSV-DD-04,@SUM(1+1)*cmd|' /C calc'!A0,'@SUM(1+1)*cmd|' /C calc'!A0,Formula prefix at
+JH-CSV-DD-05,"\tcalc","'\tcalc",Formula prefix tab
+JH-CSV-DD-06,"\rcmd","'\rcmd",Formula prefix carriage return
+JH-CSV-DD-07,Office Supplies,Office Supplies,Safe normal description text
+JH-CSV-DD-08,+45.50,+45.50,Legitimate signed positive number
