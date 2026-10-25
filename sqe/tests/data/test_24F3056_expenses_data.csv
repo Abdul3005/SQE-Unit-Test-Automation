@@ -1,0 +1,9 @@
+test_id,description,amount,category,date,expected_valid,error_field,error_message
+CSV-01,Groceries,45.50,Food,2026-10-15,true,,
+CSV-02,,10.00,Food,2026-10-15,false,description,Description is required.
+CSV-03,Valid Lunch,0,Food,2026-10-15,false,amount,Amount must be greater than $0.
+CSV-04,Valid Lunch,-5.00,Food,2026-10-15,false,amount,Amount must be greater than $0.
+CSV-05,Valid Lunch,not_a_number,Food,2026-10-15,false,amount,Enter a valid amount.
+CSV-06,Luxury Car,1000000.01,Other,2026-10-15,false,amount,That amount looks too large.
+CSV-07,Valid Lunch,15.00,FakeCategory,2026-10-15,false,category,Choose a valid category.
+CSV-08,Valid Lunch,15.00,Food,2026-02-30,false,date,Enter a valid date.
